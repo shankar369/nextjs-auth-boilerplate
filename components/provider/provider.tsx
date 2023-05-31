@@ -2,8 +2,12 @@
 
 import { SessionProvider } from "next-auth/react";
 
-const Provider = ({ children, session }) => (
-  <SessionProvider session={session}>
+interface IProvider {
+  children : React.ReactNode
+}
+
+const Provider = ({ children } : IProvider) => (
+  <SessionProvider>
     {children}
   </SessionProvider>
 )
