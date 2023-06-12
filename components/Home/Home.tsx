@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 
-// import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { useSession } from "next-auth/react";
 
 export default function Home() {
@@ -9,12 +9,9 @@ export default function Home() {
 
   // const [providers, setProviders] = useState(null);
 
-  // useEffect(() => {
-    // (async () => {
-    //   const res = await getProviders();
-    //   setProviders(res);
-    // })();
-  // }, []);
+  useEffect(() => {
+    console.log(session,"-------homepage session")
+  }, []);
 
   return (
     <div className=" h-screen">

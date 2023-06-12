@@ -3,8 +3,7 @@ import Home from "@/components/Home/Home"
 
 export default function App() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between px-24">
-      <Navbar/>
+    <main className="flex min-w-full min-h-screen flex-col items-center justify-between">
       <Home/>
     </main>
   )
